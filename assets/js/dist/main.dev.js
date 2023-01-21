@@ -18,7 +18,7 @@ showMenu('nav-toggle', 'nav-menu');
 var navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
-  var navMenu = document.getElementById('nav-menu'); // When we click on each nav__link, we remove the show-menu class
+  var navMenu = document.getElementById('nav-menu'); // Quando clicamos em cada nav__link, removemos a classe show-menu
 
   navMenu.classList.remove('show');
 }
@@ -52,8 +52,7 @@ var sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
   duration: 2000,
-  delay: 200,
-  reset: true
+  delay: 200
 });
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', {
